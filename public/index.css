@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+h1,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.strawHatTop {
+  position: absolute;
+  margin-top: 450px;
+  height: 700px;
+}
+
+.strawHatMid {
+  position: absolute;
+  margin-top: 1200px;
+  right: 0;
+  height: 900px;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #1e1e1e;
+  padding: 14px 128px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 16px;
+}
+
+.nav-toggle-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-toggle-btn:hover {
+  cursor: pointer;
+}
+
+.nav-toggle-icon {
+  margin: auto;
+  margin-left: 16px;
+}
+
+.homepage {
+  padding-top: 35px;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-college,
+.location-intern {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.location-college-icon,
+.location-intern-icon {
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.location-college-detail,
+.location-intern-detail {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 12px;
+}
+
+.hero-main {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+
+.heroImage {
+  position: relative;
+  margin-top: 32px;
+  left: 128px;
+  height: 800px;
+}
+
+.hero-title {
+  margin-top: 128px;
+}
+
+.hero-title-name {
+  color: #000;
+  font-family: Poppins;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-title-by {
+  color: #000;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px; /* 200% */
+}
+
+.hero-btn {
+  margin-top: 56px;
+}
+
+.abt-btn {
+  width: 152px;
+  height: 56px;
+  flex-shrink: 0;
+
+  border-radius: 5px;
+  border: 2px solid #000;
+  background: #000;
+
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+}
+
+.cntc-btn {
+  margin-left: 32px;
+
+  width: 155px;
+  height: 56px;
+  flex-shrink: 0;
+
+  border-radius: 5px;
+  border: 2px solid #000;
+  background: #fff;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+}
+
+.hero-links {
+  margin-top: 24px;
+}
+
+.hero-link-item {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+
+.skills-title {
+  margin-top: 170px;
+  text-align: center;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.skills-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 64px;
+  margin-left: 128px;
+}
+
+.skill-list-name {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 69px;
+}
+
+.skills-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 32px;
+  flex-shrink: 0;
+}
