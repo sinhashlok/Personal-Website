@@ -1,7 +1,24 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import {
+  createBrowserRouter,
+  Route,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import { useState } from "react";
-import Skills from "./components/Skills";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+
+// layouts
+import RootLayouts from "./Layouts/RootLayouts";
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayouts />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+    </Route>
+  )
+);
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,21 +30,7 @@ export default function App() {
     darkModeBg: { backgroundColor: darkMode ? "black" : "white" },
   };
 
-  console.log(darkMode);
-
   return (
-    <div style={style.darkModeBg}>
-      <img
-        src="../public/images/strawHat/strawHat.png"
-        className="strawHatTop"
-      />
-      <img
-        src="../public/images/strawHat/strawHatMid.png"
-        className="strawHatMid"
-      />
-      <Navbar onClick={handleClick} darkMode={darkMode} />
-      <Hero darkMode={darkMode} />
-      <Skills darkMode={darkMode} />
-    </div>
+    <RouterProvider router={router} onClick={handleClick} darkMode={darkMode} />
   );
 }

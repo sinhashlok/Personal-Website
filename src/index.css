@@ -13,13 +13,14 @@ p {
 
 .strawHatTop {
   position: absolute;
-  margin-top: 450px;
+  margin-top: -50px;
   height: 700px;
+  z-index: 0;
 }
 
 .strawHatMid {
   position: absolute;
-  margin-top: 1200px;
+  margin-top: 1050px;
   right: 0;
   height: 900px;
 }
@@ -42,6 +43,7 @@ nav {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
 }
 
 .nav-items {
@@ -56,6 +58,7 @@ nav {
   font-weight: 700;
   line-height: normal;
   padding: 0 16px;
+  text-decoration: none;
 }
 
 .nav-toggle-btn {
@@ -71,6 +74,57 @@ nav {
 .nav-toggle-icon {
   margin: auto;
   margin-left: 16px;
+}
+
+/* ABOUT PAGE */
+.about {
+  padding: 0 128px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.abt-hi {
+  margin-top: 84px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.abt-wave {
+  font-size: 48px;
+}
+
+.abt-me-tag {
+  margin-top: 10px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+
+.abt-me-content {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 94px;
+  width: 728px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+}
+
+.abtImage {
+  position: relative;
+  left: 128px;
+  height: 900px;
 }
 
 .homepage {
@@ -124,7 +178,7 @@ nav {
 }
 
 .hero-title {
-  margin-top: 128px;
+  margin-top: 180px;
 }
 
 .hero-title-name {
@@ -134,6 +188,10 @@ nav {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.hero-title-name:hover {
+  cursor: pointer;
 }
 
 .hero-title-by {
@@ -185,15 +243,20 @@ nav {
   line-height: 100%; /* 24px */
 }
 
+.social-link:hover {
+  cursor: pointer;
+}
+
 .hero-links {
-  margin-top: 24px;
+  margin-top: 48px;
 }
 
 .hero-link-item {
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
-  margin-right: 24px;
+  margin-right: 18px;
+}
+
+.hero-link-item:hover {
+  cursor: pointer;
 }
 
 .skills-title {
@@ -226,9 +289,10 @@ nav {
   margin-right: 69px;
 }
 
-.skills-icon {
+.skill-icon {
   width: 48px;
   height: 48px;
   margin-right: 32px;
   flex-shrink: 0;
+  margin-right: 32px;
 }
