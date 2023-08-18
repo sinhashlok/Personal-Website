@@ -1,14 +1,16 @@
 import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 import Skills from "../components/Skills";
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
+import { ThemeContext } from "../Context/ThemeContext";
 
 export default function Home() {
-  const location = useLocation();
-  const darkMode = location.search.darkMode;
+  const {isLightTheme} = useContext(ThemeContext);
   const style = {
-    darkModeBg: { backgroundColor: darkMode ? "black" : "white" },
+    darkModeBg: { backgroundColor: isLightTheme ? "black" : "white" },
   };
+
 
   return (
     <div style={style.darkModeBg}>
@@ -20,8 +22,9 @@ export default function Home() {
         src="../public/images/strawHat/strawHatMid.png"
         className="strawHatMid"
       />
-      <Hero darkMode={darkMode} />
-      <Skills darkMode={darkMode} />
+      <Hero />
+      <Skills />
+      <Projects />
     </div>
   );
 }

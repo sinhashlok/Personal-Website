@@ -1,15 +1,13 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useContext } from "react";
+import { ThemeContext } from "../Context/ThemeContext";
 
 export default function About() {
-  const location = useLocation();
-  const darkMode = location.state.darkMode;
+  const {isLightTheme} = useContext(ThemeContext);
 
   const style = {
-    darkModeText: { color: darkMode ? "white" : "black" },
-    fill: darkMode ? "white" : "black",
-    abtBtn: { border: "2px solid #fff" },
-    darkModeBg: { backgroundColor: darkMode ? "black" : "white" }
+    darkModeText: { color: isLightTheme ? "white" : "black" },
+    fill: isLightTheme ? "white" : "black",
+    darkModeBg: { backgroundColor: isLightTheme ? "black" : "white" }
   };
 
   return (

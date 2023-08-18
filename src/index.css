@@ -6,7 +6,8 @@ body {
 
 h1,
 h4,
-p {
+p,
+a {
   margin: 0;
   padding: 0;
 }
@@ -260,7 +261,7 @@ nav {
 }
 
 .skills-title {
-  margin-top: 170px;
+  margin-top: 180px;
   text-align: center;
 
   color: #000;
@@ -295,4 +296,126 @@ nav {
   margin-right: 32px;
   flex-shrink: 0;
   margin-right: 32px;
+}
+
+/* PROEJCTS */
+.projects {
+  margin-top: 220px;
+}
+
+.project-header {
+  text-align: center;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.development {
+  margin: 0 128px;
+  margin-top: 48px;
+}
+
+.project-title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.project-cards {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* CARD */
+.card {
+  max-width: 341px;
+  min-height: 407px;
+}
+
+.card-img {
+  width: 341px;
+  height: 223px;
+  flex-shrink: 0;
+
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.img {
+  width: 341px;
+  height: 223px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
+.card-name {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+}
+
+.tech {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 24px */
+}
+
+.card-tech {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  margin-bottom: 40px;
+}
+
+.card-btn-link {
+  margin-right: 22px;
+  padding: 15px;
+  background-color: #000;
+
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 18px */
+}
+
+.card-btn-github {
+  margin-right: 22px;
+  padding: 15px;
+
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 5px;
+
+  text-decoration: none;
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 18px */
 }

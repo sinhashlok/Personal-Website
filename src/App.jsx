@@ -4,8 +4,8 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import { useState } from "react";
 
+// pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 
@@ -21,16 +21,9 @@ const router = createBrowserRouter(
 );
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  function handleClick() {
-    setDarkMode(!darkMode);
-  }
-  const style = {
-    darkModeBg: { backgroundColor: darkMode ? "black" : "white" },
-  };
-
   return (
-    <RouterProvider router={router} onClick={handleClick} darkMode={darkMode} />
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   );
 }

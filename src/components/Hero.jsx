@@ -1,3 +1,6 @@
+import { ThemeContext } from "../Context/ThemeContext";
+import { useContext } from "react";
+
 import data from "../icons/light/lightIcons.json";
 
 import linkedIn_LIGHT from "../icons/social/LinkedIn-Light.svg";
@@ -10,14 +13,15 @@ import twitter_DARK from "../icons/social/Twitter-Dark.svg";
 import gitHub_DARK from "../icons/social/GitHub-Dark.svg";
 import resume_DARK from "../icons/social/Resume-Dark.svg";
 
-import { Link, NavLink, Outlet } from "react-router-dom";
+export default function Hero() {
+  const {isLightTheme} = useContext(ThemeContext)
 
-export default function Hero(props) {
   const style = {
-    darkModeText: { color: props.darkMode ? "white" : "black" },
-    fill: props.darkMode ? "white" : "black",
+    darkModeText: { color: isLightTheme ? "white" : "black" },
+    fill: isLightTheme ? "white" : "black",
     abtBtn: { border: "2px solid #fff" },
   };
+  
   return (
     <div className="homepage">
       <div className="location">
@@ -76,28 +80,28 @@ export default function Hero(props) {
             <a className="social-link" href="https://www.linkedin.com/in/shlok-sinha-8297ba204/" target="_blank">
             <img
               href="https://www.linkedin.com/in/shlok-sinha-8297ba204/"
-              src={props.darkMode ? linkedIn_DARK : linkedIn_LIGHT}
+              src={isLightTheme ? linkedIn_DARK : linkedIn_LIGHT}
               alt="HTML"
               className="hero-link-item"
             />
             </a>
             <a className="social-link" href="https://twitter.com/SinhaShlok12/" target="_blank">
             <img
-              src={props.darkMode ? twitter_DARK : twitter_LIGHT}
+              src={isLightTheme ? twitter_DARK : twitter_LIGHT}
               alt="HTML"
               className="hero-link-item"
             />
             </a>
             <a className="social-link" href="https://github.com/sinhashlok" target="_blank">
             <img
-              src={props.darkMode ? gitHub_DARK : gitHub_LIGHT}
+              src={isLightTheme ? gitHub_DARK : gitHub_LIGHT}
               alt="HTML"
               className="hero-link-item"
             />
             </a>
             <a className="social-link" href="https://drive.google.com/file/d/1z-ESgGkS8peBcRzC9phd3rdZVYE99MPK/view?usp=sharing" target="_blank">
             <img
-              src={props.darkMode ? resume_DARK : resume_LIGHT}
+              src={isLightTheme ? resume_DARK : resume_LIGHT}
               alt="HTML"
               className="hero-link-item"
             />
