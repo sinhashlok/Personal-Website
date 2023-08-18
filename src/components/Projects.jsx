@@ -1,16 +1,26 @@
 import ProejctCard from "./ProjectCard";
 import projectsData from "../projectsData.json";
+import { ThemeContext } from "../Context/ThemeContext";
+import { useContext } from "react";
+
+
 const devData = Object.entries(projectsData.dev);
 console.log(devData);
 ProejctCard
 
 
 export default function () {
+  const { isLightTheme } = useContext(ThemeContext);
+
+  const style = {
+    darkModeText: { color: isLightTheme ? "white" : "black" },
+  };
+
   return (
     <div className="projects">
-      <h1 className="project-header">Projects</h1>
+      <h1 className="project-header" style={style.darkModeText}>PROJECTS</h1>
       <div className="development">
-        <h1 className="project-title">Development</h1>
+        <h1 className="project-title"style={style.darkModeText}>DEVELOPMENT</h1>
         <div className="project-cards">
         {devData.map(data => {
             const name = data[1].name;
