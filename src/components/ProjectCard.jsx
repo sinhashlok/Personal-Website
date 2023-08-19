@@ -50,7 +50,7 @@ export default function ProejctCard(props) {
           <a
             style={{
               display: props.gitHub == null ? "none" : "inline",
-              backgroundColor: isLightTheme ? "none" : "white",
+              backgroundColor: isLightTheme ? "white" : "none",
             }}
             href={props.gitHub}
             className="card-btn-github"
