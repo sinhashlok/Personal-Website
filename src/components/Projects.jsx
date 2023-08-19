@@ -5,9 +5,7 @@ import { useContext } from "react";
 
 
 const devData = Object.entries(projectsData.dev);
-console.log(devData);
-ProejctCard
-
+const UIData = Object.entries(projectsData.UI);
 
 export default function () {
   const { isLightTheme } = useContext(ThemeContext);
@@ -19,10 +17,23 @@ export default function () {
   return (
     <div className="projects">
       <h1 className="project-header" style={style.darkModeText}>PROJECTS</h1>
-      <div className="development">
+      <div className="project-domain">
         <h1 className="project-title"style={style.darkModeText}>DEVELOPMENT</h1>
         <div className="project-cards">
         {devData.map(data => {
+            const name = data[1].name;
+            const tech = data[1].tech;
+            const link = data[1].link;
+            const gitHub = data[1].github;
+            const imgLink = data[1].img;
+            return <ProejctCard name={name} tech={tech} link={link} gitHub={gitHub} imgLink={imgLink}/>
+        })}
+        </div>
+      </div>
+      <div className="project-domain">
+        <h1 className="project-title"style={style.darkModeText}>UI</h1>
+        <div className="project-cards">
+        {UIData.map(data => {
             const name = data[1].name;
             const tech = data[1].tech;
             const link = data[1].link;

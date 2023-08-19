@@ -10,8 +10,19 @@ export default function ProejctCard(props) {
   };
 
   return (
-    <div className="card " style={{backgroundColor: isLightTheme ? "black" : "white"}}>
-      <div className="card-img">
+    <div
+      className="card "
+      style={{
+        backgroundColor: isLightTheme ? "black" : "white",
+        borderColor: isLightTheme ? "white" : "black",
+      }}
+    >
+      <div
+        className="card-img"
+        style={{
+          backgroundImage: `${props.imgLink}`,
+        }}
+      >
         <img src={props.imgLink} className="img"></img>
       </div>
       <div className="card-details">
