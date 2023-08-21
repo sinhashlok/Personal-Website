@@ -5,6 +5,7 @@ import CSS from "../icons/skills/frontend/CSS.svg";
 import JS from "../icons/skills/frontend/JS.svg";
 import Bootstrap from "../icons/skills/frontend/Bootstrap.svg";
 import React from "../icons/skills/frontend/React.svg";
+import Tailwind from "../icons/skills/frontend/Tailwind.svg"
 
 import Mongodb from "../icons/skills/backend/Mongodb.svg";
 import Mongoose_Light from "../icons/skills/backend/Mongoose.svg";
@@ -51,6 +52,7 @@ export default function Skills() {
           <img src={JS} alt="JS" className="skill-icon" />
           <img src={Bootstrap} alt="BS" className="skill-icon" />
           <img src={React} alt="REACT" className="skill-icon" />
+          <img src={Tailwind} alt= "TAILWIND" className="skill-icon"/>
           {/* HTML */}
         </div>
         <div className="skills-list-item">

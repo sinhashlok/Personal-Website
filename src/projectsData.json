@@ -5,14 +5,14 @@
       "tech": "React js, Material UI, REST COUNTRIES API",
       "link": "https://boisterous-sprite-ffb77e.netlify.app/",
       "github": "https://github.com/sinhashlok/Countries",
-      "img": "public/images/devImages/Countries.png"
+      "img": "./images/devImages/Countries.png"
     },
     {
       "name": "Intro component with sign up form",
       "tech": "HTML, CSS, Javascirpt",
       "link": "https://sinhashlok.github.io/Intro-Component-with-Signup-Form/",
       "github": "https://github.com/sinhashlok/Intro-Component-with-Signup-Form",
-      "img": "public/images/devImages/IntroForm.png"
+      "img": "./images/devImages/IntroForm.png"
     },
     {
       "name": "User Data Storage",
@@ -26,21 +26,21 @@
       "tech": "React js, Material UI",
       "link": null,
       "github": "https://github.com/sinhashlok/Contact-e-card",
-      "img": "public/images/devImages/e-card.png"
+      "img": "./images/devImages/e-card.png"
     },
     {
       "name": "Food Blogging Website",
       "tech": "React js, Material UI",
       "link": null,
       "github": "https://github.com/sinhashlok/Food-Blogging-Website",
-      "img": "public/images/devImages/food-blogging.png"
+      "img": "./images/devImages/food-blogging.png"
     },
     {
       "name": "Meme Generator",
       "tech": "React js, Imgflip API",
       "link": null,
       "github": "https://github.com/sinhashlok/Meme-Generator",
-      "img": "public/images/devImages/meme-generator.png"
+      "img": "./images/devImages/meme-generator.png"
     }
   ],
   "UI": [
@@ -49,21 +49,21 @@
       "tech": "Figma, Photoshop",
       "link": "https://www.behance.net/gallery/144609103/Landing-Page-Shoe",
       "github": null,
-      "img": "public/images/uiImages/shoe.png"
+      "img": "./images/uiImages/shoe.png"
     },
     {
       "name": "Spong - Music Player UI",
       "tech": "Figma, Photoshop",
       "link": "https://www.behance.net/gallery/144886059/Spong-Music-Player-UI",
       "github": null,
-      "img": "public/images/uiImages/spong.png"
+      "img": "./images/uiImages/spong.png"
     },
     {
         "name": "User Profile",
         "tech": "Figma, Photoshop",
         "link": "https://www.behance.net/gallery/144717867/User-Profile",
         "github": null,
-        "img": "public/images/uiImages/user-profile.png"
+        "img": "./images/uiImages/user-profile.png"
       }
   ]
 }

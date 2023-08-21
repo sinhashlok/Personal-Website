@@ -36,7 +36,7 @@ export default function About() {
         </div>
       </div>
       <div className="abt-right">
-        <img src="../public/images/AbtPageImage.png" className="abtImage" />
+        <img src="./images/AbtPageImage.png" className="abtImage" />
       </div>
     </div>
   );

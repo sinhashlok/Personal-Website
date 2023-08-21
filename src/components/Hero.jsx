@@ -110,7 +110,7 @@ export default function Hero() {
         </div>
         <div className="hero-main-right">
           <img
-            src="../public/images/HomepageImage.png"
+            src="./images/HomepageImage.png"
             className="heroImage"
           ></img>
         </div>

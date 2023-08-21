@@ -14,11 +14,11 @@ export default function Home() {
   return (
     <div style={style.darkModeBg} className="home">
       <img
-        src="../public/images/strawHat/strawHat.png"
+        src="./images/strawHat/strawHat.png"
         className="strawHatTop"
       />
       <img
-        src="../public/images/strawHat/strawHatMid.png"
+        src="./images/strawHat/strawHatMid.png"
         className="strawHatMid"
       />
       <Hero />
